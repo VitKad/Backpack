@@ -12,6 +12,11 @@ body {
   color: $default;
 }
 
+
+section{
+  padding: 100px 0;
+}
+
 .main {
   flex-grow: 1;
 }
@@ -30,3 +35,5 @@ body {
   text-transform: uppercase;
   
 }
+
+
