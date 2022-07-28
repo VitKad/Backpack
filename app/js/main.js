@@ -2,16 +2,7 @@ $(function(){
 
   
 
-  const scene = document.querySelectorAll('.video-popup--wrapper');
-    
-  window.addEventListener("scroll", function(){
-      scene.forEach(function(userItem) {
-         
-          let offset = this.window.pageYOffset;
-          userItem.style.backgroundPositionY = offset * 1 + "px";
-        });
-     
-  });
+
 
  /*  if (window.matchMedia('screen and (max-width: 1000px)').matches) {
       const scene = document.querySelectorAll('.video-popup');
