@@ -33,6 +33,16 @@ section{
   line-height: 32px;
   color: $title;
   text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
   
 }
 
+
+  
+.product-item__price-box--top{
+  border: 1px solid $accent;
+  background-color: rgb(201, 247, 208);
+  border-radius: 20px;
+  box-shadow: 0 0 10px $accent;
+}
