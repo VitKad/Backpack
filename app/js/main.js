@@ -1,6 +1,7 @@
 $(function(){
 
-
+  
+  var mixer = mixitup('.popular-products__items');
   /* $(".popular-products__tab-link").on("click", function(e){
     e.preventDefault();
     $(".popular-products__tab-link").addClass("popular-products__tab-link--active")
@@ -58,6 +59,7 @@ $(function(){
   
   const deadline = $('.promo__timer').attr('data-time');
   initializeClock('promo__timer', deadline);
+
 
 });
   

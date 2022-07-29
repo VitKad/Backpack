@@ -443,19 +443,24 @@
     color: $title;
     font-size: 18px;
     margin-bottom: 40px;
+    .mixitup-control-active{
+      border-bottom: 1px solid $accent;
+    }
   }
 
   &__tab-link{
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
     padding-bottom: 5px;
     border-bottom: 1px solid transparent;
   }
 
-  &__tab-link--active{
-    border-bottom: 1px solid $accent;
-  }
   &__tab-link+.popular-products__tab-link {
     margin-left: 20px;
   }
+
+ 
 
   &__items{
     display: grid;
@@ -473,7 +478,7 @@
   padding: 23px 23px 30px;
   text-align: center;
   position: relative;
-  transition: all .3s;
+  /* transition: all .3s; */
 
   &:hover {
 
@@ -516,7 +521,7 @@
         width: 60px;
         height: 30px;
         background-color: $accent;
-        box-shadow: 0 0 15px $accent;
+        box-shadow: 0 0 5px $accent;
 
       }
     }
@@ -595,8 +600,8 @@
     margin-bottom: 5px;
     max-height: 24px;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
   /*   max-width: 100px; */
     
   }

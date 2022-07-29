@@ -165,20 +165,32 @@
       <div class="container">
         <h2 class="popular-products__title title">Популярные товары</h2>
         <div class="popular-products__tabs">
-          <a class="popular-products__tab-link" href="#">Все товары</a>
-          <a class="popular-products__tab-link" href="#">Рюкзаки</a>
-          <a class="popular-products__tab-link" href="#">Палатки</a>
-          <a class="popular-products__tab-link" href="#">Мешки</a>
-          <a class="popular-products__tab-link" href="#">Термобутылки</a>
-          <a class="popular-products__tab-link" href="#">Фонари</a>
+          <button type="button" data-filter=".category-all" class="popular-products__tab-link" >
+            Все товары
+          </button>
+          <button type="button" data-filter=".category-r" class="popular-products__tab-link" >
+            Рюкзаки
+          </button>
+          <button type="button" data-filter=".category-p" class="popular-products__tab-link" >
+            Палатки
+          </button>
+          <button type="button" data-filter=".category-m" class="popular-products__tab-link" >
+            Мешки
+          </button>
+          <button type="button" data-filter=".category-b" class="popular-products__tab-link" >
+            Термобутылки
+          </button>
+          <button type="button" data-filter=".category-f" class="popular-products__tab-link" >
+            Фонари
+          </button>
         </div>
         <div class="popular-products__items">
 
 
-          <div class="product-item product-item--sale">
+          <div class="product-item product-item--sale category-r category-all mix">
             <a class="product-item__img-box" href="#">
               <span class="product-item__img-more">Посмотреть больше</span>
-              <img class="product-item__img" src="img/products/r2.jpg" alt="product img">
+              <img class="product-item__img" src="img/products/r1.jpg" alt="product img">
             </a>
             <a class="product-item__name" href="#">Рюкзак туристический</a>
             <div class="product-item__price-box">
@@ -212,10 +224,7 @@
             </div>
           </div>
 
-          
-
-
-          <div class="product-item">
+          <div class="product-item category-b category-all mix">
             <a class="product-item__img-box" href="#">
               <span class="product-item__img-more">Посмотреть больше</span>
               <img class="product-item__img" src="img/products/b1.jpg" alt="product img">
@@ -252,15 +261,12 @@
             </div>
           </div>
 
-          
-
-
-          <div class="product-item product-item--sale">
+          <div class="product-item product-item--sale category-m category-all mix">
             <a class="product-item__img-box" href="#">
               <span class="product-item__img-more">Посмотреть больше</span>
               <img class="product-item__img" src="img/products/m1.jpg" alt="product img">
             </a>
-            <a class="product-item__name" href="#">Спальный мешок "Улитка"</a>
+            <a class="product-item__name" href="#">Спальный мешок "Улит...</a>
             <div class="product-item__price-box">
               <span class="product-item__price">1999</span>
               <sup class="product-item__oldprice">2599</sup> руб.
@@ -292,8 +298,7 @@
             </div>
           </div>
 
-          
-          <div class="product-item product-item--missing">
+          <div class="product-item product-item--missing category-f category-all mix">
             <a class="product-item__img-box" href="#">
               <span class="product-item__img-more">Посмотреть больше</span>
               <img class="product-item__img" src="img/products/f1.jpg" alt="product img">
@@ -326,9 +331,7 @@
             </div>
           </div>
 
-
-
-          <div class="product-item">
+          <div class="product-item category-b category-all mix">
             <a class="product-item__img-box" href="#">
               <span class="product-item__img-more">Посмотреть больше</span>
               <img class="product-item__img" src="img/products/b2.jpg" alt="product img">
@@ -365,14 +368,12 @@
             </div>
           </div>
 
-
-
-          <div class="product-item product-item--sale">
+          <div class="product-item product-item--sale category-p category-all mix">
             <a class="product-item__img-box" href="#">
               <span class="product-item__img-more">Посмотреть больше</span>
               <img class="product-item__img" src="img/products/p1.jpg" alt="product img">
             </a>
-            <a class="product-item__name" href="#">Палатка 2-местная TravelProd</a>
+            <a class="product-item__name" href="#">Палатка 2-местная Trav...</a>
             <div class="product-item__price-box">
               <span class="product-item__price">5999</span>
               <sup class="product-item__oldprice">8999</sup> руб.
@@ -404,14 +405,12 @@
             </div>
           </div>
 
-
-
-          <div class="product-item product-item--sale">
+          <div class="product-item product-item--sale category-r category-all mix">
             <a class="product-item__img-box" href="#">
               <span class="product-item__img-more">Посмотреть больше</span>
               <img class="product-item__img" src="img/products/r2.jpg" alt="product img">
             </a>
-            <a class="product-item__name" href="#">Рюкзак туристический Аляска</a>
+            <a class="product-item__name" href="#">Рюкзак туристический ...</a>
             <div class="product-item__price-box">
               <span class="product-item__price">7999</span>
               <sup class="product-item__oldprice">8999</sup> руб.
@@ -443,13 +442,12 @@
             </div>
           </div>
 
-
-          <div class="product-item product-item--missing">
+          <div class="product-item product-item--missing category-r category-all mix">
             <a class="product-item__img-box" href="#">
               <span class="product-item__img-more">Посмотреть больше</span>
               <img class="product-item__img" src="img/products/r3.jpg" alt="product img">
             </a>
-            <a class="product-item__name" href="#">Рюкзак туристический Аляска 2</a>
+            <a class="product-item__name" href="#">Рюкзак туристический ...</a>
             <div class="product-item__price-box">
               <span class="product-item__price">2999</span>
               <sup class="product-item__oldprice">3999</sup> руб.
@@ -481,6 +479,588 @@
             </div>
           </div>
 
+          <!-- categories -->
+
+          <div class="product-item category-b mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/b3.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Термос Арктика М4</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">1599</span>
+              <sup class="product-item__oldprice"></sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="0"></div>
+              <a class="product-item__stars-link" href="#">(0)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">10</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+          <div class="product-item category-b mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/b4.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Термос Арктика М4</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">1599</span>
+              <sup class="product-item__oldprice"></sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="0"></div>
+              <a class="product-item__stars-link" href="#">(0)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">10</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+          <div class="product-item category-b mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/b5.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Термос Арктика М4</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">1599</span>
+              <sup class="product-item__oldprice"></sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="0"></div>
+              <a class="product-item__stars-link" href="#">(0)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">10</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+
+          <div class="product-item category-r mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/r4.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Термос Арктика М4</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">1599</span>
+              <sup class="product-item__oldprice"></sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="0"></div>
+              <a class="product-item__stars-link" href="#">(0)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">10</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+          <div class="product-item category-r mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/r5.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Термос Арктика М4</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">1599</span>
+              <sup class="product-item__oldprice"></sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="0"></div>
+              <a class="product-item__stars-link" href="#">(0)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">10</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+          <div class="product-item category-r mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/r6.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Термос Арктика М4</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">1599</span>
+              <sup class="product-item__oldprice"></sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="0"></div>
+              <a class="product-item__stars-link" href="#">(0)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">10</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+          <div class="product-item category-r mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/r7.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Термос Арктика М4</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">1599</span>
+              <sup class="product-item__oldprice"></sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="0"></div>
+              <a class="product-item__stars-link" href="#">(0)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">10</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+          <div class="product-item category-r mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/r8.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Термос Арктика М4</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">1599</span>
+              <sup class="product-item__oldprice"></sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="0"></div>
+              <a class="product-item__stars-link" href="#">(0)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">10</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+
+          <div class="product-item category-m mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/m2.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Термос Арктика М4</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">1599</span>
+              <sup class="product-item__oldprice"></sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="0"></div>
+              <a class="product-item__stars-link" href="#">(0)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">10</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+          <div class="product-item category-m mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/m3.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Термос Арктика М4</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">1599</span>
+              <sup class="product-item__oldprice"></sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="0"></div>
+              <a class="product-item__stars-link" href="#">(0)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">10</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+          <div class="product-item category-m mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/m4.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Термос Арктика М4</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">1599</span>
+              <sup class="product-item__oldprice"></sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="0"></div>
+              <a class="product-item__stars-link" href="#">(0)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">10</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+
+          <div class="product-item category-f mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/f2.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Термос Арктика М4</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">1599</span>
+              <sup class="product-item__oldprice"></sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="0"></div>
+              <a class="product-item__stars-link" href="#">(0)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">10</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+
+          <div class="product-item product-item--sale category-p mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/p2.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Палатка 2-местная Trav...</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">5999</span>
+              <sup class="product-item__oldprice">8999</sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="4"></div>
+              <a class="product-item__stars-link" href="#">(3)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">1</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+          <div class="product-item product-item--sale category-p mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/p3.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Палатка 2-местная Trav...</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">5999</span>
+              <sup class="product-item__oldprice">8999</sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="4"></div>
+              <a class="product-item__stars-link" href="#">(3)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">1</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+          <div class="product-item product-item--sale category-p mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/p4.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Палатка 2-местная Trav...</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">5999</span>
+              <sup class="product-item__oldprice">8999</sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="4"></div>
+              <a class="product-item__stars-link" href="#">(3)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">1</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
+          <div class="product-item product-item--sale category-p mix" style="display: none;">
+            <a class="product-item__img-box" href="#">
+              <span class="product-item__img-more">Посмотреть больше</span>
+              <img class="product-item__img" src="img/products/p5.jpg" alt="product img">
+            </a>
+            <a class="product-item__name" href="#">Палатка 2-местная Trav...</a>
+            <div class="product-item__price-box">
+              <span class="product-item__price">5999</span>
+              <sup class="product-item__oldprice">8999</sup> руб.
+            </div>
+            <div class="product-item__stars">
+              <div class="star" data-rateyo-rating="4"></div>
+              <a class="product-item__stars-link" href="#">(3)</a>
+            </div>
+            <div class="product-item__interaction">
+              <button class="product-item__btn product-item__btn--heart">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+              <p class="product-item__status">
+                <span>В наличие</span>
+                <span class="product-item__status-count">1</span> шт.
+              </p>
+              <button class="product-item__btn product-item__btn--cart">
+                <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"
+                    fill="#2F3035" />
+                </svg>
+              </button>
+
+            </div>
+          </div>
 
         </div>
       </div>
