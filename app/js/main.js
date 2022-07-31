@@ -1,11 +1,13 @@
 $(function(){
 
+
+  
   $(".popular-blog__items").slick({
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="px" viewBox="0 0 100 100" version="1.1"> <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 32.355469 50.023438 L 75.808594 6.566406 C 77.308594 5.066406 77.308594 2.628906 75.808594 1.128906 C 74.304688 -0.375 71.871094 -0.375 70.367188 1.128906 L 24.191406 47.300781 C 22.691406 48.804688 22.691406 51.242188 24.191406 52.746094 L 70.367188 98.917969 C 71.894531 100.394531 74.332031 100.355469 75.808594 98.824219 C 77.246094 97.332031 77.246094 94.96875 75.808594 93.480469 Z M 32.355469 50.023438 "/> </svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="px" viewBox="0 0 100 100" version="1.1"><path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 75.863281 47.253906 L 29.613281 1.128906 C 28.097656 -0.378906 25.644531 -0.378906 24.128906 1.136719 C 22.617188 2.652344 22.621094 5.109375 24.136719 6.621094 L 67.636719 50 L 24.136719 93.378906 C 22.621094 94.890625 22.617188 97.34375 24.128906 98.859375 C 24.886719 99.621094 25.878906 100 26.871094 100 C 27.863281 100 28.855469 99.621094 29.613281 98.867188 L 75.863281 52.746094 C 76.59375 52.019531 77.003906 51.027344 77.003906 50 C 77.003906 48.972656 76.59375 47.984375 75.863281 47.253906 Z M 75.863281 47.253906 "/> </svg></button>'
+    prevArrow: '<button type="button" class="slick-prev"><?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px" height="50px" viewBox="0 0 28 50" version="1.1"> <g id="surface1"><path style=" stroke:none;fill-rule:nonzero;fill:rgb(18.431373%,18.823529%,20.784314%);fill-opacity:1;" d="M 3.441406 24.46875 L 26.148438 2.367188 C 26.707031 1.824219 26.707031 0.953125 26.148438 0.40625 C 25.589844 -0.136719 24.695312 -0.136719 24.136719 0.40625 L 0.417969 23.496094 C -0.140625 24.039062 -0.140625 24.910156 0.417969 25.453125 L 24.136719 48.53125 C 24.410156 48.796875 24.777344 48.941406 25.136719 48.941406 C 25.496094 48.941406 25.863281 48.808594 26.136719 48.53125 C 26.695312 47.988281 26.695312 47.117188 26.136719 46.574219 Z M 3.441406 24.46875 "/> </g> </svg> </button>',
+    nextArrow: '<button type="button" class="slick-next"><?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px" height="50px" viewBox="0 0 28 50" version="1.1"><g id="surface1"> <path style=" stroke:none;fill-rule:nonzero;fill:rgb(18.431373%,18.823529%,20.784314%);fill-opacity:1;" d="M 23.125 24.472656 L 0.417969 46.574219 C -0.140625 47.117188 -0.140625 47.992188 0.417969 48.535156 C 0.976562 49.078125 1.875 49.078125 2.429688 48.535156 L 26.148438 25.445312 C 26.707031 24.902344 26.707031 24.03125 26.148438 23.488281 L 2.429688 0.410156 C 2.15625 0.144531 1.789062 0 1.429688 0 C 1.074219 0 0.703125 0.132812 0.429688 0.410156 C -0.128906 0.953125 -0.128906 1.824219 0.429688 2.371094 Z M 23.125 24.472656 "/> </g> </svg> </button>'
     
   });
   
@@ -67,6 +69,18 @@ $(function(){
   
   const deadline = $('.promo__timer').attr('data-time');
   initializeClock('promo__timer', deadline);
+
+
+  $('.popular-products__btn').on('click', function(){
+    $('.popular-products__btn').css({'display':'none'});
+  });
+
+  $('.popular-products__tab-link:first-child').on('click', function(){
+    $('.popular-products__btn').css({'display':'flex'});
+  });
+
+
+  
 
 
 });
