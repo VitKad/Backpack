@@ -1,6 +1,13 @@
 $(function(){
 
 
+  $(".filter-price__input").ionRangeSlider({
+    type: "double",
+    postfix: " руб.",
+    step: 1000
+});
+
+
   
   $(".popular-blog__items").slick({
     infinite: false,
@@ -81,7 +88,6 @@ $(function(){
 
 
   
-
 
 });
   

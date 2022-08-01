@@ -840,7 +840,7 @@
     box-shadow: 0px 0px 30px 0px rgba(202, 202, 202, .3);
 
     .blog-item__img {
-            transform: scale(1.05);
+      transform: scale(1.05);
 
     }
   }
@@ -1173,5 +1173,242 @@
 
 }
 
+
+.shop {
+  &__filters {
+    max-width: 300px;
+  }
+
+  &__filters-btn{
+    @extend %btn;
+    width: 100%;
+    box-shadow:none;
+  }
+
+}
+
+.filter {
+  &__title {
+    display: inline-block;
+    @extend %sfp-600;
+    font-size: 20px;
+    color: $title;
+    position: relative;
+    margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 11px;
+      right: -50px;
+      width: 40px;
+      height: 3px;
+      background-color: $default;
+
+    }
+  }
+
+
+  &__item {
+    border: 1px solid $bg;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.filter-price {
+
+  .irs--flat .irs-line {
+    top: 25px;
+    height: 10px;
+    background-color: $bg;
+    border-radius: 4px;
+  }
+
+  .irs--flat .irs-bar {
+    top: 25px;
+    height: 10px;
+    background-color: $accent;
+  }
+
+  .irs--flat .irs-from,
+  .irs--flat .irs-to,
+  .irs--flat .irs-single,
+  .irs-max,
+  .irs-min {
+    color: white;
+    background-color: $accent-hover;
+    @extend %barlow-400;
+    padding: 4px 9px;
+    border-radius: 25px;
+
+  }
+
+  .irs-max,
+  .irs-min {
+    background-color: $default;
+  }
+
+  .irs-from,
+  .irs-to,
+  .irs-single {
+    position: absolute;
+    display: block;
+    top: -7px;
+  }
+
+  .irs--flat .irs-from:before,
+  .irs--flat .irs-to:before,
+  .irs--flat .irs-single:before {
+    border-top-color: $accent-hover;
+  }
+
+  .irs--flat .irs-handle {
+    top: 21px;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, .2);
+  }
+
+  .irs--flat .irs-handle>i {
+    display: none;
+  }
+
+
+}
+
+.filter-category,
+.filter-brand {
+  &__input {
+    @extend %checkbox-reset;
+
+    &:checked+.filter-category__checkbox {
+      background-color: $accent;
+      color: #fff;
+    }
+
+    &:checked+.filter-brand__checkbox {
+      background-color: $accent;
+      color: #fff;
+    }
+  }
+
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    @extend %sfp-400;
+    color: $title;
+    background-color: $bg;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+  }
+
+  &__count {
+    font-size: 14px;
+  }
+}
+
+.filter-color {
+  &__label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    @extend %checkbox-reset;
+
+    &:checked+.filter-color__checkbox::after {
+      display: block;
+
+    }
+  }
+
+  &__checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $border;
+    border-radius: 50%;
+    @extend %sfp-400;
+    position: relative;
+    background-color: transparent;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 3px;
+      width: 12px;
+      height: 14px;
+      background-image: url(../img/icons/check-accent.svg);
+      display: none;
+    }
+
+    &--blue {
+      background-color: blue;
+    }
+
+    &--green {
+      background-color: green;
+    }
+
+    &--red {
+      background-color: red;
+    }
+
+    &--black {
+      background-color: black;
+    }
+
+    &--white {
+      background-color: white;
+
+      &::after {
+        background-image: url(../img/icons/check-accent-black.svg);
+      }
+    }
+  }
+
+  &__text {
+    margin-left: 10px;
+
+  }
+}
+
+
+.filter-tags {
+
+  &__form{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  &__label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    @extend %checkbox-reset;
+
+    &:checked+.filter-tags__checkbox {
+      background-color: $accent;
+      color: #fff;
+    }
+  }
+
+  &__checkbox{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: $bg;
+    border: 1px solid $border;
+  
+  }
+
+}
 
 @import "media"

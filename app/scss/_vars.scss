@@ -2,7 +2,7 @@ $accent: #068911;
 $title: #202020;
 $default: #666;
 $bg: #ebeef0;
-$border: #ececec;
+$border: #d4d4d4;
 $accent-hover: #3ab845;
 %sfp-400 {
   font-family: 'SFProDisplay-Regular', sans-serif;
@@ -71,3 +71,12 @@ $accent-hover: #3ab845;
 
  
  }
+
+
+
+%checkbox-reset{
+ width: 1px;
+ height: 1px;
+ clip: rect(0, 0, 0, 0);
+ overflow: hidden;
+ position: absolute;}

@@ -72,21 +72,248 @@
     <div class="top">
       <div class="container">
         <div class="top__inner">
-          <h3 class="top__title">Авторизация</h3>
+          <h3 class="top__title">Магазин</h3>
           <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
               <li class="breadcrumbs__item">
                 <a class="breadcrumbs__link" href="index.html">Главная</a>
               </li>
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Магазин</a>
+                <a class="breadcrumbs__link" href="#">Товары</a>
               </li>
             </ul>
-            
+
           </div>
         </div>
       </div>
     </div>
+
+    <section class="shop">
+      <div class="container">
+        <div class="shop__inner">
+
+          <div class="shop__filters filter">
+
+          
+
+
+            <div class="filter__item filter-category">
+              <h3 class="filter__title">Категории</h3>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <p class="filter-category__name">Рюкзаки</p>
+                    <span class="filter-category__count">192</span>
+                  </div>
+
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <p class="filter-category__name">Палатки</p>
+                    <span class="filter-category__count">32</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <p class="filter-category__name">Одежда</p>
+                    <span class="filter-category__count">284</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <p class="filter-category__name">Термопосуда</p>
+                    <span class="filter-category__count">13</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <p class="filter-category__name">Спальные мешки</p>
+                    <span class="filter-category__count">42</span>
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <p class="filter-category__name">Фонари</p>
+                    <span class="filter-category__count">42</span>
+                  </div>
+                </label>
+
+              </form>
+            </div>
+
+            <div class="filter__item filter-price">
+              <h3 class="filter__title">Стоимость</h3>
+              <form class="filter-price__form" action="#">
+              
+                  <input class="filter-price__input js-range-slider" type="text" name="my_range" value="" data-min="0" data-max="100000" data-from="5000"
+                    data-to="50000">
+                  <!--   От <span class="filter-price__left"></span>
+                До <span class="filter-price__rigth"></span> -->
+               
+              </form>
+            </div>
+
+
+            <div class="filter__item filter-brand">
+              <h3 class="filter__title">Бренд</h3>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <p class="filter-brand__name">Deuter</p>
+                    <span class="filter-brand__count">255</span>
+                  </div>
+
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <p class="filter-brand__name">The North Face</p>
+                    <span class="filter-brand__count">365</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <p class="filter-brand__name">Osprey</p>
+                    <span class="filter-brand__count">124</span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <p class="filter-brand__name">Tatonka</p>
+                    <span class="filter-brand__count">87</span>
+                  </div>
+                </label>
+
+              </form>
+            </div>
+
+
+
+
+            <!--DOPS-->
+            <div class="filter__item filter-color">
+              <h3 class="filter__title">Цвет</h3>
+              <form class="filter-color__form" action="#">
+                
+                <label class="filter-color__label">
+                  <input class="filter-color__input" type="checkbox">
+                  <span class="filter-color__checkbox filter-color__checkbox--blue"></span>
+                  <span class="filter-color__text">Синий</span>
+                </label>
+
+                <label class="filter-color__label">
+                  <input class="filter-color__input" type="checkbox">
+                  <span class="filter-color__checkbox filter-color__checkbox--green"></span>
+                  <span class="filter-color__text">Зеленый</span>
+                </label>
+
+                <label class="filter-color__label">
+                  <input class="filter-color__input" type="checkbox">
+                  <span class="filter-color__checkbox filter-color__checkbox--red"></span>
+                  <span class="filter-color__text">Красный</span>
+                </label>
+
+                <label class="filter-color__label">
+                  <input class="filter-color__input" type="checkbox">
+                  <span class="filter-color__checkbox filter-color__checkbox--black"></span>
+                  <span class="filter-color__text">Черный</span>
+                </label>
+
+                <label class="filter-color__label">
+                  <input class="filter-color__input" type="checkbox">
+                  <span class="filter-color__checkbox filter-color__checkbox--white"></span>
+                  <span class="filter-color__text">Белый</span>
+                </label>
+
+              </form>
+
+
+            </div>
+
+
+            <div class="filter__item filter-tags">
+              <h3 class="filter__title">Тэги</h3>
+              <form class="filter-tags__form" action="#">
+                
+                <label class="filter-tags__label">
+                  <input class="filter-tags__input" type="checkbox">
+                  <span class="filter-tags__checkbox">Поход</span>
+                </label>
+                
+                <label class="filter-tags__label">
+                  <input class="filter-tags__input" type="checkbox">
+                  <span class="filter-tags__checkbox">Отдых</span>
+                </label>
+                
+                <label class="filter-tags__label">
+                  <input class="filter-tags__input" type="checkbox">
+                  <span class="filter-tags__checkbox">Ночлег</span>
+                </label>
+                
+                <label class="filter-tags__label">
+                  <input class="filter-tags__input" type="checkbox">
+                  <span class="filter-tags__checkbox">Пикник</span>
+                </label>
+                
+                <label class="filter-tags__label">
+                  <input class="filter-tags__input" type="checkbox">
+                  <span class="filter-tags__checkbox">Туризм</span>
+                </label>
+
+              </form>
+
+           
+            </div>
+            <!--
+          <div class="shop__content">
+            <div class="shop__content-filters top-filters">
+              <div class="top-filters__buttons">
+                <p class="top-filters__text">Вид</p>
+                <button class="top-filters__btn top-filters__btn--grid">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px">
+                    <path fill-rule="evenodd" fill="#ebeef0" d="M0.0,3.749 L3.749,3.749 L3.749,0.0 L0.0,0.0 L0.0,3.749 ZM5.624,14.999 L9.374,14.999 L9.374,11.249 L5.624,11.249 L5.624,14.999 ZM0.0,14.999 L3.749,14.999 L3.749,11.249 L0.0,11.249 L0.0,14.999 ZM0.0,9.374 L3.749,9.374 L3.749,5.624 L0.0,5.624 L0.0,9.374 ZM5.624,9.374 L9.374,9.374 L9.374,5.624 L5.624,5.624 L5.624,9.374 ZM11.249,0.0 L11.249,3.749 L14.999,3.749 L14.999,0.0 L11.249,0.0 ZM5.624,3.749 L9.374,3.749 L9.374,0.0 L5.624,0.0 L5.624,3.749 ZM11.249,9.374 L14.999,9.374 L14.999,5.624 L11.249,5.624 L11.249,9.374 ZM11.249,14.999 L14.999,14.999 L14.999,11.249 L11.249,11.249 L11.249,14.999 Z"></path>
+                  </svg>
+                </button>
+
+                <button class="top-filters__btn top-filters__btn--list">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="15px">
+                    <path fill-rule="evenodd" fill="#ebeef0" d="M5.834,14.998 L5.834,10.826 L19.993,10.826 L19.993,14.998 L5.834,14.998 ZM5.834,5.413 L19.993,5.413 L19.993,9.585 L5.834,9.585 L5.834,5.413 ZM5.834,0.0 L19.993,0.0 L19.993,4.172 L5.834,4.172 L5.834,0.0 ZM0.6,10.826 L4.429,10.826 L4.429,14.998 L0.6,14.998 L0.6,10.826 ZM0.6,5.413 L4.429,5.413 L4.429,9.585 L0.6,9.585 L0.6,5.413 ZM0.6,0.0 L4.429,0.0 L4.429,4.172 L0.6,4.172 L0.6,0.0 Z"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="top-filters__selects">
+                <select class="top-filters__select">
+                  <span class="top-filters__select-text">Сортировать</span>
+                  <option class="top-filters__option">По релевантности</option>
+                  <option class="top-filters__option">По дате</option>
+                  <option class="top-filters__option">По стоимости</option>
+                </select>
+
+                <select class="top-filters__select">
+                  <span class="top-filters__select-text">Показать</span>
+                  <option class="top-filters__option">10</option>
+                  <option class="top-filters__option">20</option>
+                  <option class="top-filters__option">50</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        -->
+
+        <button class="shop__filters-btn" type="button">Применить фильтры</button>
+          </div>
+        </div>
+    </section>
 
   </main>
 
