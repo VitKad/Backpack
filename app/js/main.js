@@ -1,5 +1,29 @@
 $(function(){
 
+
+
+  $('.slider-product__full').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    draggable: false,
+    asNavFor: '.slider-product__thumb'
+  });
+  $('.slider-product__thumb').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-product__full',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ui-g1" style="transform:rotate(180deg);"><path fill="currentColor" d="M5.293 12.293a1 1 0 1 0 1.414 1.414l5-5a1 1 0 0 0 0-1.414l-5-5a1 1 0 0 0-1.414 1.414L9.586 8l-4.293 4.293Z"></path></svg></button>',
+
+    nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ui-g1" ><path fill="currentColor" d="M5.293 12.293a1 1 0 1 0 1.414 1.414l5-5a1 1 0 0 0 0-1.414l-5-5a1 1 0 0 0-1.414 1.414L9.586 8l-4.293 4.293Z"></path></svg></button>'
+
+  });
+
+
  
   $(".star").rateYo({
     starWidth: "20px",
@@ -20,7 +44,7 @@ $(function(){
   
   });
 
-  $('.top-filters__select').styler();
+  $('.top-filters__select, .product__count-input').styler();
 
   $('.top-filters__btn--grid').on('click', function(){
     $('.top-filters__btn--list').removeClass('top-filters__btn--active');
