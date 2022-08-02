@@ -839,7 +839,7 @@
   max-width: 370px;
   width: 100%;
   overflow: hidden;
-  width: 370px;
+
 
   &:hover {
 
@@ -2185,6 +2185,43 @@
 
 }
 
+
+.blog{
+  &__title{
+  
+  }
+
+  &__tabs{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    .mixitup-control-active{
+      color: #fff;
+      background-color: $accent;
+    }
+  }
+
+  &__tabs-btn{
+    border:none;
+    background-color: $bg;
+    padding: 8px 25px;
+    @extend %sfp-500;
+    color: $title;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover{
+      background-color: $accent-hover;
+      color: #fff;
+    }
+    
+  }
+
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px 30px;
+  }
+}
 
 
 

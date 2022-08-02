@@ -90,7 +90,8 @@ $(function(){
     
   });
   
-  var mixer = mixitup('.popular-products__items');
+  var mixer = mixitup('.popular-products__items, .blog__items');
+
   /* $(".popular-products__tab-link").on("click", function(e){
     e.preventDefault();
     $(".popular-products__tab-link").addClass("popular-products__tab-link--active")
