@@ -1,13 +1,32 @@
 $(function(){
 
+ 
+  $(".star").rateYo({
+    starWidth: "20px",
+    normalFill: "#c4c2c2",
+    ratedFill: "#3ab845",
+    readOnly: true
 
+  });
   $(".filter-price__input").ionRangeSlider({
     type: "double",
     postfix: " руб.",
     step: 1000
 });
 
+  $('.top-filters__select').styler();
 
+  $('.top-filters__btn--grid').on('click', function(){
+    $('.top-filters__btn--list').removeClass('top-filters__btn--active');
+    $(this).addClass('top-filters__btn--active');
+    $('.shop__content-items').removeClass('shop__content-items--list');
+  });
+
+  $('.top-filters__btn--list').on('click', function(){
+    $('.top-filters__btn--grid').removeClass('top-filters__btn--active');
+    $(this).addClass('top-filters__btn--active');
+    $('.shop__content-items').addClass('shop__content-items--list');
+  });
   
   $(".popular-blog__items").slick({
     infinite: false,
@@ -24,14 +43,7 @@ $(function(){
     $(".popular-products__tab-link").addClass("popular-products__tab-link--active")
     $(this).addClass("popular-products__tab-link--active")
   }); */
-  
-  $(".star").rateYo({
-    starWidth: "20px",
-    normalFill: "#c4c2c2",
-    ratedFill: "#3ab845",
-    readOnly: true
-
-  });
+ 
 
 
   function getTimeRemaining(endtime) {

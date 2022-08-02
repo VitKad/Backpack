@@ -541,7 +541,13 @@
   }
 
 
+  &__text{
+    display: none;
+  }
 
+  &__btn-text{
+    display: none;
+  }
 
   &__img-box {
     display: block;
@@ -1177,17 +1183,228 @@
 .shop {
   &__filters {
     max-width: 300px;
+    margin-right: 30px;
   }
 
-  &__filters-btn{
+  &__inner {
+    display: flex;
+  }
+
+  &__filters-btn {
     @extend %btn;
     width: 100%;
-    box-shadow:none;
+    box-shadow: none;
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__content-filters {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    @extend %sfp-500;
+    color: $title;
+
+  }
+
+  &__content-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:30px
+  }
+
+  &__content-items--list{
+    display: block;
+    .product-item {
+      max-width: 100%;
+      display: flex;
+      padding: 5px 15px 5px;
+      &:hover{
+        box-shadow: none;
+      }
+      margin-bottom: 50px;
+    }
+
+    .product-item__img-box{
+      margin-right: 30px;
+    }
+
+    .product-item__block{
+      text-align: left;
+      margin-top: 20px;
+    }
+    .product-item--sale .product-item__img-box::after {
+     display: none;
+  }
+
+  .product-item__price-box{
+    padding: 0;
+  }
+  .product-item__stars{
+    justify-content: flex-start;
+    margin-left: 30px;
+  }
+    
+  .product-item__pricerate{
+    display: flex;
+    align-items: center;
+   
+  }
+
+  .product-item__text{
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .product-item__img-more{
+    display: none;
+  }
+
+  .product-item__interaction {
+    position:inherit;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .product-item__status {
+    line-height: 24px;
+    margin: 5px 0;
+    font-size: 14px;
+    order:6;
+}
+
+  .product-item__btn--heart{
+    display: none;
+  }
+
+  .product-item__btn--cart {
+    @extend %btn;
+    border: 1px solid #068911;
+    border-radius: 0;
+    width: 200px;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: none !important;
+    &:hover{
+      background-color: $accent !important;
+      color: #fff !important;
+    }
+    svg{
+    display: none;
+    }
+   
+}
+
+.product-item:hover .product-item__btn--cart {
+  background-color: transparent;
+  box-shadow: none;
+}
+.product-item__btn-text{
+  display: block;
+  
+}
+
+
   }
 
 }
 
+.top-filters {
+  &__buttons {
+    margin-left: 20px;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+
+    &--active {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__select-text {
+    margin-right: 5px;
+  }
+
+
+
+  &__select {
+
+    &--sort {
+      .jq-selectbox__select {
+        min-width: 150px;
+      }
+    }
+  }
+
+  .jq-selectbox__select {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    border: 1px solid $border;
+    border-radius: 0px;
+    max-height: 30px;
+    padding: 0 35px 0 10px;
+
+
+  }
+
+  .jq-selectbox ul {
+    @extend %sfp-400;
+    font-size: 14px;
+
+  }
+
+
+  .jq-selectbox__select-text {
+    @extend %sfp-500;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .jq-selectbox.focused .jq-selectbox__select {
+    border: 1px solid $accent;
+  }
+
+  .jq-selectbox li:hover {
+    background-color: $accent;
+
+  }
+
+  .jq-selectbox__trigger-arrow {
+    top: 13px;
+    border-top: 5px solid $title;
+  }
+
+  .jq-selectbox__trigger {
+
+    border-left: none;
+  }
+
+  .jq-selectbox li.selected {
+    background-color: $accent;
+}
+
+
+
+  &__buttons{
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+
+
 .filter {
+  margin-top: 70px;
   &__title {
     display: inline-block;
     @extend %sfp-600;
@@ -1264,11 +1481,12 @@
   }
 
   .irs--flat .irs-handle {
-    top: 21px;
-    width: 18px;
-    height: 18px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
     background-color: #fff;
     box-shadow: 0 0 15px 2px rgba(0, 0, 0, .2);
+    border-radius: 50%;
   }
 
   .irs--flat .irs-handle>i {
@@ -1382,11 +1600,12 @@
 
 .filter-tags {
 
-  &__form{
+  &__form {
     display: flex;
     flex-wrap: wrap;
 
   }
+
   &__label {
     margin-right: 10px;
     margin-bottom: 10px;
@@ -1401,14 +1620,39 @@
     }
   }
 
-  &__checkbox{
+  &__checkbox {
     display: inline-block;
     padding: 8px 15px;
     background-color: $bg;
     border: 1px solid $border;
-  
+
   }
 
+}
+
+
+.pagination{
+  margin-top: 50px;
+  &__list{
+    display: flex;
+    justify-content: center;
+    @extend %barlow-700;
+  }
+
+  &__item{
+    &+.pagination__item{
+      margin-left: 30px;
+    }
+    &--active{
+      color: $accent-hover;
+    }
+  }
+
+  &__link{
+    &:hover{
+      color: $title;
+    }
+  }
 }
 
 @import "media"
