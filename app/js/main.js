@@ -14,6 +14,12 @@ $(function(){
     step: 1000
 });
 
+
+  $(".filter-category__accordion").accordionjs({
+    activeIndex: false
+  
+  });
+
   $('.top-filters__select').styler();
 
   $('.top-filters__btn--grid').on('click', function(){
