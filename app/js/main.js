@@ -1,6 +1,14 @@
 $(function(){
 
 
+  $('.tabs__link').on('click', function(e){
+    e.preventDefault();
+    $('.tabs__link').removeClass('tabs__link--active');
+    $(this).addClass('tabs__link--active');
+    $('.tabs__block').removeClass('tabs__block--active');
+    $($(this).attr('href')).addClass('tabs__block--active');
+  });
+
 
   $('.slider-product__full').slick({
     slidesToShow: 1,
@@ -24,14 +32,29 @@ $(function(){
   });
 
 
- 
   $(".star").rateYo({
     starWidth: "20px",
     normalFill: "#c4c2c2",
     ratedFill: "#3ab845",
     readOnly: true
-
   });
+  $(".reviews__evaluation-star").rateYo({
+    starWidth: "16px",
+    normalFill: "#c4c2c2",
+    ratedFill: "#3ab845",
+    readOnly: true
+  });
+  $(".reviews__form-star").rateYo({
+    starWidth: "16px",
+    normalFill: "#c4c2c2",
+    ratedFill: "#3ab845",
+    fullStar: true
+    
+  });
+
+
+ 
+
   $(".filter-price__input").ionRangeSlider({
     type: "double",
     postfix: " руб.",

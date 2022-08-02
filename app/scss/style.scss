@@ -1747,10 +1747,12 @@
 
   &__details{
     display: flex;
+    margin-bottom: 50px;
 
   }
 
   &__item{
+    padding-top: 20px;
     margin-left: auto;
     max-width: 570px;
     width: 100%;
@@ -1781,11 +1783,12 @@
   &__price-box{
     font-size: 24px;
     padding: 0;
+    margin-right: 40px;
     
   }
 
   &__description{
-    max-width: 370px;
+   /*  max-width: 370px; */
 
     margin-bottom: 20px;
   }
@@ -1960,16 +1963,18 @@
 }
 
 .slider-product {
-  max-width: 500px;
+  max-width: 550px;
 
   &__full{
     margin-bottom: 20px;
+   /*  box-shadow: 0 0 50px 50px rgba(0,0,0,.05); */
   }
 
   &__full-img {
-    max-width: 500px;
+    max-width: 550px;
     width: 100%;
     object-fit: cover;
+
   }
 
   .slick-slide {
@@ -1999,8 +2004,8 @@
   }
 
   .slick-arrow {
-    border: none;
-    background-color: $bg;
+    border: 1px solid $title;
+    background-color: #fff;
     height: 100%;
     position: absolute;
     left: -5px;
@@ -2008,7 +2013,7 @@
     z-index: 5;
     transform: translateY(-52%);
     &:hover{
-      background-color: $border;
+      background-color: $bg;
     }
   }
 
@@ -2024,6 +2029,161 @@
   }
 }
 
+.tabs{
+  &__top{
+    padding: 20px 0;
+    background-color: $bg;
+    margin-bottom: 20px;
+  }
+
+  &__list{
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  &__link{
+    @extend %sfp-500;
+    font-size: 20px;
+    color: $title;
+    transition: all .3s;
+    padding-bottom: 5px;
+    &:hover{
+      color: $accent;
+    }
+    &--active{
+      color: $accent;
+      border-bottom: 1px solid $accent;
+    }
+  }
+
+  &__block{
+    display: none;
+
+    &--active{
+      display: block;
+    }
+  }
+}
+
+.reviews{
+  &__item{
+    padding: 20px 20px;
+    border: 1px solid $bg;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  &__user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__user-img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius:50%;
+    margin-right: 20px;
+  }
+
+  &__user-name{
+    @extend %sfp-600;
+    color: $title;
+    font-size: 20px;
+  }
+
+  &__evaluation{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__evaluation-starbox{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__evaluation-item{
+    margin-right: 15px;
+    border:1px solid $border;
+    padding: 5px 10px;
+  }
+
+  &__text{
+    margin-bottom: 15px;
+  }
+
+  &__reply{
+    font-size: 16px;
+    margin-right: 5px;
+    border-bottom: 1px dashed $default;
+    transition: all .3s;
+
+    &:hover{
+      color: $title;
+      border-bottom: 1px dashed $title;
+     
+    }
+  }
+
+  &__reply-box{
+    
+    path{
+      fill: $default;
+      transition: all .3s;
+     }
+    &:hover{
+      path{
+        fill: $title;
+       
+       }
+    }
+  }
+
+  &__title{
+    color: $title;
+    padding: 20px 0;
+    font-size: 24px;
+  }
+
+  &__form-rate{
+    display: flex;
+    margin-bottom: 20px;
+
+  }
+
+  &__form-item{
+    @extend %sfp-500;
+    padding: 10px 15px;
+    border: 1px solid $border;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &+.reviews__form-item{
+      margin-left: 15px;
+    }
+  }
+
+  &__form-textarea{
+    width: 100%;
+    height: 200px;
+    border: 1px solid $border;
+    resize: none;
+    margin-bottom: 20px;
+  }
+
+  &__form-btn{
+    @extend %btn;
+    box-shadow:none;
+  }
+
+
+}
 
 
 
