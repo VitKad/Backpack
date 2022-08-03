@@ -57,7 +57,7 @@ $(function(){
     ratedFill: "#3ab845",
     readOnly: true
   });
-  $(".reviews__form-star").rateYo({
+  $(".review-post__form-star").rateYo({
     starWidth: "16px",
     normalFill: "#c4c2c2",
     ratedFill: "#3ab845",
