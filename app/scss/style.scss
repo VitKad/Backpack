@@ -2624,5 +2624,117 @@
 
 }
 
+.contacts{
+  &__title{
+
+  }
+
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+  }
+
+  &__item{ 
+    max-width: 370px;
+    width: 100%;
+    background-color: #f7f7f7;
+    border:2px solid transparent;
+    padding: 75px 50px;
+    text-align: center;
+    transition: all .3s;
+    &:hover{
+      border-color:$accent;
+      .contacts__item-img{
+        background-color: $title;
+        path{
+          fill: $accent-hover;
+        }
+      }
+    }
+  }
+
+  &__item-img{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:20px;
+    margin: 0 auto 50px;
+    background-color: #fff;
+    box-shadow:0 0 40px 1px rgba(0,0,0,.1);
+    transition: all .3s;
+    path{
+      fill: $title;
+      transition: all .3s;
+    }
+  }
+
+  &__item-name{
+    color: $title;
+    @extend %sfp-500;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__item-text, 
+  &__item-link{
+    display: block;
+    font-size: 18px;
+  }
+
+  &__item-link{
+    transition: all .3s;
+    &:hover{
+      color: $accent-hover;
+    }
+  }
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form{
+    max-width: 670px;
+    width: 100%;
+  }
+
+  &__form-box{
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__form-input{
+    height: 50px;
+
+    & +.contacts__form-input{
+      margin-left: 30px;
+    }
+  }
+  &__form-textarea,
+  &__form-input{
+    border: 1px solid $border;
+    padding: 15px 15px;
+    width: 100%;
+  }
+  &__form-textarea{
+    resize: none;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  &__form-btn{
+    @extend %btn;
+    box-shadow:none;
+  }
+
+  &__map{
+   border: 1px solid $border;
+   height: 100%;
+  }
+}
+
 
 @import "media"
