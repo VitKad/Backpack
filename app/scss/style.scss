@@ -812,16 +812,17 @@
   }
 
   &__items {
-    max-width: 100%;
-    margin: 0 auto;
-
+  
+   /*  margin: 0 -25px; */
+    margin-left: -25px;
+    margin-right: -25px;
     /*     display: flex; */
   }
 
   .slick {
-    &-slide {
+   /*  &-slide {
       margin-left: 25px;
-    }
+    } */
 
    /*  &-list {
       margin-left: -40px;
@@ -867,14 +868,14 @@
 
 
 
-
 .blog-item {
   /*  display: inline-block; */
   border: 1px solid $bg;
   border-radius: 50px 50px 0 0;
   height: 490px;
-  max-width: 370px;
-  width: 100%;
+  max-width: 100%;
+  
+  margin: 0 20px;
   overflow: hidden;
 
   &--overview{

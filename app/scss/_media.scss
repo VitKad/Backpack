@@ -5,25 +5,23 @@
 
 @media(max-width:1560px) {
   .popular-blog{
-    .container{
-      padding: 0 100px;
-    }
-
-    .slick-slide {
-      margin-left: 10px;
-      margin: 0 20px;
-    }
 
     .slick-next {
 
-      right: -60px;
+      right: 30px;
     }
   
     .slick-prev {
 
-      left: -50px;
+      left: 30px;
     }
   }
+
+  .popular-blog__items {
+
+     padding: 0 80px;
+     margin: 0 -10px;
+   }
 }
 
 
@@ -46,11 +44,17 @@
  
 }
 
-.blog-item{
+/* .blog-item{
   max-height: 100%;
     max-width: 370px;
     width: 100%;
     height: auto;
+}*/
+
+
+.blog-item {
+
+  margin: 0 15px;
 }
 
 .blog-item__img-link {
@@ -60,7 +64,7 @@
 .blog-item__img {
   height: auto;
   max-height: 325px;
-}
+} 
 
 }
 
@@ -114,6 +118,17 @@
 .promo__timer-text{
   font-size: 14px;
 } */
+.blog-item {
+  height: auto;
+
+}
+
+.blog-item__img {
+
+  max-height: 100%;
+
+}
+
 }
 
 
@@ -133,9 +148,9 @@
     .footer__title {
       margin: 0 auto;
     }
-
-
+  
   }
+
 
   .footer__navigation,
   .footer__social {
@@ -147,7 +162,7 @@
     grid-column: 2 span;
   }
 
-  ;
+ 
 
 
 
@@ -251,6 +266,9 @@
     
   }
 
+  .blog-item__content{
+    padding: 30px 30px;
+  }
 }
 
 
@@ -305,6 +323,7 @@
   .popular-products__tab-link+.popular-products__tab-link {
     margin-left: 0;
 }
+
 }
 
 
@@ -466,7 +485,39 @@ z-index: 10;
 .bars-btn{
   display: block;
 }
+.popular-blog__items {
+
+  padding: 0 10px;
 }
+
+.slick-arrow {
+  svg {
+    filter: drop-shadow(0px 0px 3px $title );
+    path {
+      fill: $bg !important;
+    }
+  }
+}
+
+.popular-blog .slick-disabled svg path {
+  fill: $default  !important;
+}
+
+.popular-blog .slick-arrow{
+  top: 40%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
 
 @media(max-width:500px) {
   .video-popup__content{
@@ -481,6 +532,18 @@ z-index: 10;
   .popular-products__tabs{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+  }
+
+  .blog-item__content{
+    padding: 20px 10px;
+  }
+
+  .blog-item__info{
+    flex-direction: column;
+  }
+
+  .popular-blog{
+    padding: 50px 0;
   }
 }
 
@@ -558,5 +621,10 @@ z-index: 10;
 .popular-categories__item-title{
   font-size: 26px;
 }
+
+.popular-blog .slick-arrow{
+  top: 35%;
+}
+
 
 }
