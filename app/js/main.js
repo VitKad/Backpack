@@ -20,10 +20,11 @@ $(function(){
   
 
 
-  $('.bars-btn, .menu__link').on('click', function(e){
-  /*   e.preventDefault(); */
+  $('.bars-btn').on('click', function(e){
+    e.preventDefault();
     $('.menu').toggleClass('menu--active');
 });
+
 
 
   
