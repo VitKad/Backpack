@@ -463,7 +463,7 @@
   border: 1px solid $bg;
   max-width: 300px;
   width: 100%;
-  max-height: 420px;
+  height: 420px;
   padding: 23px 23px 30px;
   text-align: center;
   position: relative;
@@ -806,6 +806,7 @@
     left: -100px;
     z-index: 5;
     transform: translateY(-50%);
+    cursor: pointer;
   }
 
   .slick-next {
@@ -840,6 +841,26 @@
   width: 100%;
   overflow: hidden;
 
+  &--overview{
+    
+      display: flex;
+      width: 100%;
+      max-width: 600px;
+      max-height: 100%;
+      height: auto;
+
+      .blog-item__img{
+        height: auto;
+      }
+
+      .blog-item__content {
+        width: 450px;
+      }
+      .blog-item__text{
+        margin-bottom: 5px;
+      }
+    
+  }
 
   &:hover {
 
@@ -1219,10 +1240,12 @@
   &__content-items--list {
     display: block;
 
+
     .product-item {
       max-width: 100%;
       display: flex;
       padding: 5px 15px 5px;
+      height: 100%;
 
       &:hover {
         box-shadow: none;
@@ -2009,6 +2032,7 @@
     margin-bottom: 20px;
     /*  box-shadow: 0 0 50px 50px rgba(0,0,0,.05); */
   }
+  
 
   &__full-img {
     max-width: 550px;
@@ -2052,6 +2076,7 @@
     top: 50%;
     z-index: 5;
     transform: translateY(-52%);
+    cursor: pointer;
 
     &:hover {
       background-color: $bg;
@@ -2268,7 +2293,95 @@
 
 }
 
+.specifications{
+  &__item{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
 
+  &__title{
+    color: $title;
+    @extend %sfp-500;
+    margin-bottom: 10px;
+  }
+
+  &__list{
+    display: flex;
+    margin-bottom: 3px;
+    align-items: center;
+  }
+
+  &__name{
+    color: $title;
+    margin-right: 30px;
+    min-width: 400px;
+    border-bottom: 1px dotted $border;
+
+   
+  }
+}
+
+.similar{
+
+  .product-item {
+    &:hover {
+      box-shadow: 0px 0px 10px 0px rgba(202, 202, 202, .3);
+
+    }
+  }
+
+  .slick {
+    &-slide {
+      margin: 0 10px;
+    }
+
+    &-list {
+      margin-left: -5px;
+      margin-right: -5px;
+
+    }
+
+
+    
+  }
+
+  .slick-arrow {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    z-index: 5;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .slick-next {
+    left: auto;
+    right: -100px;
+  }
+
+  .slick-disabled {
+    svg {
+      path {
+        fill: $bg  !important;
+      }
+    }
+  }
+
+  .slick-track {
+    padding: 40px 0;
+  }
+}
+
+.overview{
+  padding-top: 30px;
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+}
 .blog {
   &__title {}
 

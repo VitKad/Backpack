@@ -12,7 +12,14 @@ $(function(){
     $(this).addClass('tabs__link--active');
     $('.tabs__block').removeClass('tabs__block--active');
     $($(this).attr('href')).addClass('tabs__block--active');
+
+      $('.similar__items').slick('setPosition');
+  
   });
+
+  
+
+
 
   
   $(".article__slider").slick({
@@ -43,6 +50,13 @@ $(function(){
     nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ui-g1" ><path fill="currentColor" d="M5.293 12.293a1 1 0 1 0 1.414 1.414l5-5a1 1 0 0 0 0-1.414l-5-5a1 1 0 0 0-1.414 1.414L9.586 8l-4.293 4.293Z"></path></svg></button>'
 
   });
+
+/* 
+  $('.slider-product__thumb').on( 'mouseover', '.slider-product__thumb-item', function( event ) {
+    var index = $( event.currentTarget ).index();
+    $('.slider-product__full').flickity( 'select', index );
+  });
+   */
 
 
   $(".star").rateYo({
@@ -102,6 +116,15 @@ $(function(){
     nextArrow: '<button type="button" class="slick-next"><?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px" height="50px" viewBox="0 0 28 50" version="1.1"><g id="surface1"> <path style=" stroke:none;fill-rule:nonzero;fill:rgb(18.431373%,18.823529%,20.784314%);fill-opacity:1;" d="M 23.125 24.472656 L 0.417969 46.574219 C -0.140625 47.117188 -0.140625 47.992188 0.417969 48.535156 C 0.976562 49.078125 1.875 49.078125 2.429688 48.535156 L 26.148438 25.445312 C 26.707031 24.902344 26.707031 24.03125 26.148438 23.488281 L 2.429688 0.410156 C 2.15625 0.144531 1.789062 0 1.429688 0 C 1.074219 0 0.703125 0.132812 0.429688 0.410156 C -0.128906 0.953125 -0.128906 1.824219 0.429688 2.371094 Z M 23.125 24.472656 "/> </g> </svg> </button>'
     
   });
+  $(".similar__items").slick({
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev"><?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px" height="50px" viewBox="0 0 28 50" version="1.1"> <g id="surface1"><path style=" stroke:none;fill-rule:nonzero;fill:rgb(18.431373%,18.823529%,20.784314%);fill-opacity:1;" d="M 3.441406 24.46875 L 26.148438 2.367188 C 26.707031 1.824219 26.707031 0.953125 26.148438 0.40625 C 25.589844 -0.136719 24.695312 -0.136719 24.136719 0.40625 L 0.417969 23.496094 C -0.140625 24.039062 -0.140625 24.910156 0.417969 25.453125 L 24.136719 48.53125 C 24.410156 48.796875 24.777344 48.941406 25.136719 48.941406 C 25.496094 48.941406 25.863281 48.808594 26.136719 48.53125 C 26.695312 47.988281 26.695312 47.117188 26.136719 46.574219 Z M 3.441406 24.46875 "/> </g> </svg> </button>',
+    nextArrow: '<button type="button" class="slick-next"><?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px" height="50px" viewBox="0 0 28 50" version="1.1"><g id="surface1"> <path style=" stroke:none;fill-rule:nonzero;fill:rgb(18.431373%,18.823529%,20.784314%);fill-opacity:1;" d="M 23.125 24.472656 L 0.417969 46.574219 C -0.140625 47.117188 -0.140625 47.992188 0.417969 48.535156 C 0.976562 49.078125 1.875 49.078125 2.429688 48.535156 L 26.148438 25.445312 C 26.707031 24.902344 26.707031 24.03125 26.148438 23.488281 L 2.429688 0.410156 C 2.15625 0.144531 1.789062 0 1.429688 0 C 1.074219 0 0.703125 0.132812 0.429688 0.410156 C -0.128906 0.953125 -0.128906 1.824219 0.429688 2.371094 Z M 23.125 24.472656 "/> </g> </svg> </button>'
+    
+  });
+
 
 
   
