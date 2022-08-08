@@ -2860,9 +2860,6 @@
 }
 
 .contacts{
-  &__title{
-
-  }
 
   &__items{
     display: flex;
@@ -2968,6 +2965,8 @@
   &__map{
    border: 1px solid $border;
    height: 100%;
+   max-width: 500px;
+   width: 100%;
   }
 }
 
