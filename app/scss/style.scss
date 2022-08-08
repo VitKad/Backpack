@@ -1247,6 +1247,7 @@
 
   &__inner {
     display: flex;
+    position: relative;
   }
 
   &__filters-btn {
@@ -1389,11 +1390,16 @@
   &__btn {
     border: none;
     background-color: transparent;
+    cursor: pointer;
 
     &--active {
       path {
         fill: $accent;
       }
+    }
+
+    &--filters {
+      display: none;
     }
   }
 
@@ -1401,7 +1407,9 @@
     margin-right: 5px;
   }
 
-
+  &__block{
+    display: inline-block;
+  }
 
   &__select {
 

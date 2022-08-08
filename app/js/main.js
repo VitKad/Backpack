@@ -17,6 +17,11 @@ $(function(){
   
   });
 
+  $('.top-filters__btn--filters').on('click', function(){
+    $('.top-filters__btn--filters').toggleClass('top-filters__btn--active');
+    $('.shop__filters').toggleClass('shop__filters--active');
+  });
+
   
 
 
