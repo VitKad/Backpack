@@ -1171,6 +1171,7 @@
   &__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     color: #fff;
   }
 
@@ -1770,6 +1771,9 @@
     width: 250px;
     height: 40px;
     padding: 0 10px;
+    &::placeholder{
+      color: transparent;
+    }
   }
 
   &__btn {
@@ -2238,6 +2242,10 @@
     object-fit: cover;
     border-radius: 50%;
     margin-right: 20px;
+  }
+
+  &__user-box{
+    display: flex;
   }
 
   &__user-name {
@@ -2819,6 +2827,33 @@
       right: 30px;
     }
   }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px
+  }
+  
+  .slick-dots button {
+    border: none;
+    background-color: $border;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 8px;
+  
+  }
+  
+  
+  
+  .slick-dots .slick-active  button {
+    background: $accent;
+  }
+  
 
 
 
