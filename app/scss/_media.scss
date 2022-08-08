@@ -648,6 +648,11 @@ margin: 0; */
   margin-top: 30px;
 }
 
+.page-404__title {
+  line-height: 32px;
+  font-size: 23px;
+}
+
 }
 
 
@@ -946,6 +951,15 @@ align-self:flex-end;
 .contacts__item-text, .contacts__item-link {
   font-size: 15px;
 }
+
+.page-404__inner{
+  flex-direction: column;
+}
+
+.page-404__img-box{
+  order: -1;
+  margin-bottom: 20px;
+}
 }
 
 
@@ -1184,6 +1198,12 @@ align-self:flex-end;
     display: inline-block;
   } */
 }
+
+.page-404__title {
+  font-size: 22px;
+  line-height: 23px;
+}
+
 }
 
 

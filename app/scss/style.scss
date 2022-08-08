@@ -2971,4 +2971,40 @@
 }
 
 
+.page-404{
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+&__content{
+  max-width: 600px;
+  width: 100%;
+}
+  &__title{
+    line-height: 50px;
+    text-align: left;
+  }
+
+  &__text{
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  &__link{
+    font-size: 20px;
+    color: $title;
+    @extend %sfp-500;
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+    }
+  }
+
+  &__img{
+    object-fit: cover;
+    max-width: 500px;
+  }
+}
+
+
 @import "media"
