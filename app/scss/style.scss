@@ -1232,6 +1232,7 @@
     background-color: $accent;
     color: #fff;
 
+
     &:hover {
       background-color: #fff;
       color: $accent;
@@ -1258,6 +1259,8 @@
 
   &__link-restoring {
     transition: all .3s;
+    color: #009CF0;
+    @extend %sfp-400;
 
     &:hover {
       color: $accent;
@@ -2499,7 +2502,7 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px 30px;
+    grid-gap: 50px 20px;
   }
 }
 
