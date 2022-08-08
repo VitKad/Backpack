@@ -109,7 +109,15 @@
   }
 
 
-
+  .overview__items {
+    flex-direction: column;
+    .blog-item--overview {
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 100%;
+    }
+  
+  }
 
   .blog-one__content {
     order: 1;
@@ -343,16 +351,9 @@ margin: 0; */
     max-width: 100%;
   }
 
-  .overview__items {
-    flex-direction: column;
-  }
+  
 
-  .blog-item--overview {
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 100%;
-  }
-
+  
   .blog__items {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -918,7 +919,8 @@ align-self:flex-end;
     margin-bottom: 20px;
   }
 
-  .popular-blog {
+  .popular-blog,
+  .overview__items {
     .blog-item__img {
       display: none;
     }
