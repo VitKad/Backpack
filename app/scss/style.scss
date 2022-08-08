@@ -859,6 +859,33 @@
     }
   }
 
+   
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px
+}
+
+.slick-dots button {
+  border: none;
+  background-color: $border;
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 8px;
+
+}
+
+
+
+.slick-dots .slick-active  button {
+  background: $accent;
+}
+
   .slick-track {
     padding: 40px 0;
   }
@@ -874,10 +901,9 @@
   border-radius: 50px 50px 0 0;
   height: 490px;
   max-width: 100%;
-  
   margin: 0 20px;
   overflow: hidden;
-
+ 
   &--overview{
     
       display: flex;
@@ -885,9 +911,12 @@
       max-width: 600px;
       max-height: 100%;
       height: auto;
+      margin: 0;
 
       .blog-item__img{
-        height: auto;
+        height: 100%;
+        object-fit: cover;
+        border-radius:0;
       }
 
       .blog-item__content {
@@ -2220,6 +2249,9 @@
     align-items: center;
     margin-bottom: 15px;
   }
+  &__evaluation-total{
+    display: flex;
+  }
 
   &__evaluation-starbox {
     margin-right: 20px;
@@ -2390,29 +2422,35 @@
     
   }
 
-  .slick-arrow {
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    top: 50%;
-    left: -100px;
-    z-index: 5;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
+  
 
-  .slick-next {
-    left: auto;
-    right: -100px;
-  }
+  
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px
+}
 
-  .slick-disabled {
-    svg {
-      path {
-        fill: $bg  !important;
-      }
-    }
-  }
+.slick-dots button {
+  border: none;
+  background-color: $border;
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 8px;
+
+}
+
+
+
+.slick-dots .slick-active  button {
+  background: $accent;
+}
+
 
   .slick-track {
     padding: 40px 0;
@@ -2424,6 +2462,7 @@
   &__items{
     display: flex;
     justify-content: space-between;
+    
   }
  
 }
