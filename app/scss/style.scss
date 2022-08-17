@@ -752,6 +752,9 @@
     justify-content: space-between;
   }
 
+  &__img{
+    max-height: 100px;
+  }
 }
 
 .quality {
