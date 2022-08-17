@@ -48,9 +48,7 @@ $(function(){
         }
       }
       
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
+   
     ]
     
   });
@@ -75,13 +73,6 @@ $(function(){
     nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ui-g1" ><path fill="currentColor" d="M5.293 12.293a1 1 0 1 0 1.414 1.414l5-5a1 1 0 0 0 0-1.414l-5-5a1 1 0 0 0-1.414 1.414L9.586 8l-4.293 4.293Z"></path></svg></button>'
 
   });
-
-/* 
-  $('.slider-product__thumb').on( 'mouseover', '.slider-product__thumb-item', function( event ) {
-    var index = $( event.currentTarget ).index();
-    $('.slider-product__full').flickity( 'select', index );
-  });
-   */
 
 
   $(".star").rateYo({
@@ -155,10 +146,7 @@ $(function(){
           dots:true
         }
       },
-      
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
+    
     ]
    
     
@@ -196,14 +184,23 @@ $(function(){
 
   
   
-  var mixer = mixitup('.popular-products__items, .blog__items');
 
-  /* $(".popular-products__tab-link").on("click", function(e){
-    e.preventDefault();
-    $(".popular-products__tab-link").addClass("popular-products__tab-link--active")
-    $(this).addClass("popular-products__tab-link--active")
-  }); */
- 
+
+if (window.matchMedia('screen and (max-width: 770px)').matches) {
+  
+  var mixer = mixitup('.popular-products__items, .blog__items', {
+    animation: {
+        enable: false
+    }
+});
+
+}
+
+else {
+  var mixer = mixitup('.popular-products__items, .blog__items');
+  
+}
+
 
 
   function getTimeRemaining(endtime) {
