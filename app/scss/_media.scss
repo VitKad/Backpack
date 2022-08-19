@@ -344,6 +344,16 @@
 
 
 @media(max-width:1000px) {
+  
+.logo__img{
+  width: 140px;
+object-fit:cover;
+}
+
+.menu{
+  align-items: center;
+}
+
   .promo__inner {
     background-image: none;
     background-color: $bg;

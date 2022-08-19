@@ -1639,6 +1639,7 @@
     @extend %sfp-400;
     position: relative;
     background-color: transparent;
+    cursor: pointer;
 
     &::after {
       content: "";
@@ -1678,6 +1679,7 @@
 
   &__text {
     margin-left: 10px;
+    cursor: pointer;
 
   }
 }
